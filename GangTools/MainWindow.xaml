@@ -1,7 +1,7 @@
 ﻿<Window x:Class="GangTools.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="GangTools v1" Height="350" Width="525" SizeToContent="WidthAndHeight" Icon="Ahuri-Nes-Todd-Cube.ico">
+        Title="GangTools v2" Height="350" Width="525" SizeToContent="WidthAndHeight" Icon="Ahuri-Nes-Todd-Cube.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>

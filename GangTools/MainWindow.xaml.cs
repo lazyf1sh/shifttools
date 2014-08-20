@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,20 +33,20 @@ namespace GangTools
         {
             //инициализируем каждую смену отдельно стартовыми значениями
             Gang gang1 = new Gang();
-            gang1.GangLeader = "Игнатов";
+            gang1.GangLeader = File.ReadAllLines("gang_leaders.txt")[0];
             //стартовые даты для того чтобы поставить на рельсы кратные 12-часам циклы смен
             gang1.CurrentDateTimeStart = new DateTime(2014, 03, 19, 08, 00, 00);
 
             Gang gang2 = new Gang();
-            gang2.GangLeader = "Дымов";
+            gang2.GangLeader = File.ReadAllLines("gang_leaders.txt")[1];
             gang2.CurrentDateTimeStart = new DateTime(2014, 03, 20, 08, 00, 00);
 
             Gang gang3 = new Gang();
-            gang3.GangLeader = "Голощапов";
+            gang3.GangLeader = File.ReadAllLines("gang_leaders.txt")[2];
             gang3.CurrentDateTimeStart = new DateTime(2014, 03, 21, 08, 00, 00);
 
             Gang gang4 = new Gang();
-            gang4.GangLeader = "Патютько";
+            gang4.GangLeader = File.ReadAllLines("gang_leaders.txt")[3];
             gang4.CurrentDateTimeStart = new DateTime(2014, 03, 22, 08, 00, 00);
 
             List<Gang> gangs = new List<Gang>();
